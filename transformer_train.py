@@ -1,4 +1,4 @@
-from min_decision_transformer.decision_transformer.model import DecisionTransformer
+from decision_transformer.decision_transformer.model import DecisionTransformer
 import pickle
 
 import os
@@ -18,7 +18,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
-from min_decision_transformer.dataset.D4RLTrajectoryDataset import D4RLTrajectoryDataset, evaluate_on_env, get_d4rl_normalized_score
+from decision_transformer.dataset.D4RLTrajectoryDataset import D4RLTrajectoryDataset, evaluate_on_env, get_d4rl_normalized_score
 
 
 pickle_path = 'pickle_collections/'

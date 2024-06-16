@@ -10,9 +10,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
-from min_decision_transformer.decision_transformer.model import DecisionTransformer
+from decision_transformer.decision_transformer.model import DecisionTransformer
 
-from min_decision_transformer.dataset.D4RLTrajectoryDataset import D4RLTrajectoryDataset, evaluate_on_env, get_total_asset_list
+from decision_transformer.dataset.D4RLTrajectoryDataset import D4RLTrajectoryDataset, evaluate_on_env, get_total_asset_list
 
 
 rtg_scale = 1              # scale to normalize returns to go
